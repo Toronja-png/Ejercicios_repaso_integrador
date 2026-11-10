@@ -15,3 +15,10 @@ desafíos de un eje, entonces será capaz de aprobar sin problemas las evaluacio
 
 El repositorio estará dividido en distintas carpetas que correspondan a los ejes que se pueden trabajar. Cada alumno puede hacer pull del repo cada vez
 que se actualice para seguir trabajando en él. 
+
+| Carpeta | Contenido |
+| --- | --- |
+| `EJE5_MATRICES` | Ejercitación de matrices (partes A, B y C + ejercitación extra) |
+| `EJE6_DICCIONARIOS` | Ejercitación de diccionarios (partes A, B y C + ejercitación extra) |
+| `REPASO_INTEGRADOR` | 15 ejercicios de repaso para preparar el Examen Integrador de Programación I |
+| `MISC_EXPLORACION_ARCHIVOS` | Material sobre el uso y la exploración de archivos |
