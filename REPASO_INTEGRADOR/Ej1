@@ -1,0 +1,26 @@
+# 1. Lectura de datos de texto
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+
+# 2. Lectura y validación del año de nacimiento (Sección "Para pensar")
+# Usamos un bucle que se repite hasta que el usuario ingrese un número entero válido
+mientras_sea_invalido = True
+while mientras_sea_invalido:
+    try:
+        anio_nacimiento = int(input("Ingrese su año de nacimiento: "))
+        mientras_sea_invalido = False  # Si la conversión fue exitosa, salimos del bucle
+    except ValueError:
+        print("Error: Debe ingresar un año válido en formato numérico (ej: 2008). int('ocho') no se puede convertir.\n")
+
+ciudad = input("Ingrese su ciudad: ")
+
+# 3. Cálculo de la edad (Año actual: 2026)
+ANIO_ACTUAL = 2026
+edad = ANIO_ACTUAL - anio_nacimiento
+
+# 4. Impresión del cartel final con f-strings
+print("\n--- DATOS DEL USUARIO ---")
+print(f"Nombre completo: {nombre} {apellido}")
+print(f"Ciudad: {ciudad}")
+print(f"Año de nacimiento: {anio_nacimiento}")
+print(f"Edad: {edad}")
