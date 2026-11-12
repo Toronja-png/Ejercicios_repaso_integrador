@@ -1,0 +1,42 @@
+def pedir_entero(mensaje):
+    """Función auxiliar para solicitar un entero válido mediante try/except."""
+    while True:
+        try:
+            return int(input(mensaje))
+        except ValueError:
+            print("Error: Debe ingresar un número entero válido.\n")
+
+# 1. Lectura de datos de entrada
+a = pedir_entero("Ingrese el primer número (a): ")
+b = pedir_entero("Ingrese el segundo número (b): ")
+
+# 2. Operaciones matemáticas básicas
+suma = a + b
+resta = a - b
+producto = a * b
+
+# Manejo de división por cero para evitar fallos en tiempo de ejecución
+if b != 0:
+    cociente = a / b
+    resto = a % b
+else:
+    cociente = "No definido (división por cero)"
+    resto = "No definido"
+
+print(f"\nSuma: {suma}")
+print(f"Resta: {resta}")
+print(f"Producto: {producto}")
+print(f"Cociente: {cociente}")
+print(f"Resto: {resto}")
+
+# 3. Intercambio de valores sin variable auxiliar
+a, b = b, a
+
+print("\nValores intercambiados:")
+print(f"a = {a}")
+print(f"b = {b}")
+
+# 4. Promedio formateado a dos decimales
+# Nota: usamos los valores originales sumados
+promedio = suma / 2
+print(f"\nPromedio: {round(promedio, 2)}")
